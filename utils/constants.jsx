@@ -22,6 +22,7 @@ import mattermostThemeImage from 'images/themes/mattermost.png';
 import mattermostDarkThemeImage from 'images/themes/mattermost_dark.png';
 import defaultThemeImage from 'images/themes/organization.png';
 import windows10ThemeImage from 'images/themes/windows_dark.png';
+import vtderThemeImage from 'images/themes/vtder.png';
 import logoWebhook from 'images/webhook_icon.jpg';
 
 import Permissions from 'mattermost-redux/constants/permissions';
@@ -639,8 +640,8 @@ export const Constants = {
     MOBILE_SCREEN_WIDTH: 768,
     SCROLL_DELAY: 2000,
     SCROLL_PAGE_FRACTION: 3,
-    DEFAULT_CHANNEL: 'town-square',
-    DEFAULT_CHANNEL_UI_NAME: 'Town Square',
+    DEFAULT_CHANNEL: 'news',
+    DEFAULT_CHANNEL_UI_NAME: 'News',
     OFFTOPIC_CHANNEL: 'off-topic',
     OFFTOPIC_CHANNEL_UI_NAME: 'Off-Topic',
     GITLAB_SERVICE: 'gitlab',
@@ -700,7 +701,35 @@ export const Constants = {
     EMOJI_SIZE: 16,
     THEMES: {
         default: {
-            type: 'Mattermost',
+            type: 'VTDer',
+            sidebarBg: '#754242',
+            sidebarText: '#ffffff',
+            sidebarUnreadText: '#ffffff',
+            sidebarTextHoverBg: '#434745',
+            sidebarTextActiveBorder: '#9c4444',
+            sidebarTextActiveColor: '#ffffff',
+            sidebarHeaderBg: '#bd3737',
+            sidebarHeaderTextColor: '#ffffff',
+            onlineIndicator: '#99d04a',
+            awayIndicator: '#e0b333',
+            dndIndicator: '#f74343',
+            mentionBg: '#DB6668',
+            mentionBj: '#ffffff',
+            mentionColor: '#ffffff',
+            centerChannelBg: '#fbfbfb',
+            centerChannelColor: '#333333',
+            newMessageSeparator: '#f80',
+            linkColor: '#2389d7',
+            buttonBg: '#26a970',
+            buttonColor: '#ffffff',
+            errorTextColor: '#fd5960',
+            mentionHighlightBg: '#fff2bb',
+            mentionHighlightLink: '#2f81b7',
+            codeTheme: 'github',
+            image: vtderThemeImage,
+        },
+        mattermostDefault: {
+            type: 'Mattermost Default',
             sidebarBg: '#145dbf',
             sidebarText: '#ffffff',
             sidebarUnreadText: '#ffffff',
